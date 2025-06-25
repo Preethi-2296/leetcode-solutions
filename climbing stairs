@@ -1,0 +1,11 @@
+class Solution(object):
+    def climbStairs(self, n):
+
+        if (n==1 or n==2):
+            ways=n
+        else:
+            a,b=1,2
+            for i in range(n-1):
+                a,b=b,a+b
+            ways=a
+        return ways
