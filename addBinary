@@ -1,0 +1,24 @@
+class Solution(object):
+    def addBinary(self, a, b):
+        num_a=0
+        num_b=0
+        for i in a:
+            num_a=num_a*2+int(i)
+
+        for i in b:
+            num_b=num_b*2+int(i)
+    
+        sum=num_a+num_b
+        if sum==0:
+            return "0"
+        binary=""
+        while sum>0:
+            bit=sum%2
+            binary=str(bit)+binary
+            sum//=2
+        return binary
+            
+            
+    
+
+    
