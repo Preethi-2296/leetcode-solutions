@@ -1,0 +1,9 @@
+class Solution(object):
+    def arrangeCoins(self, n):
+        x=1
+        k=0
+        while n>=x:
+                n-=x
+                k+=1
+                x+=1
+        return k
