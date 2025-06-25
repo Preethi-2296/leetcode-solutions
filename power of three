@@ -1,0 +1,12 @@
+class Solution(object):
+    def isPowerOfThree(self, n):
+        i=0
+        if (n==0):
+            return False
+        while 3**i<=n:
+            if 3**i==n:
+                return True
+                break
+            i+=1
+        else:
+            return False
